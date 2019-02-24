@@ -3,6 +3,8 @@
 KROM THE DESTROYER is [Telmediq's](https://telmediq.com) regular-mode bounty snake! Overcome Krom's trial, and you'll
 be entered into a draw for one of our fantastic light-up prizes.
 
+See also: [Mr. Wiggles](https://github.com/Telmediq/mr-wiggles/)
+
 
 ## Rules
 
