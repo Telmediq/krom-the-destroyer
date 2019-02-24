@@ -1,0 +1,4 @@
+aiohttp==3.5.2
+Cython==0.29.5
+numpy==1.16.1
+git+https://github.com/adambard/libsnek@master#egg=libsnek
