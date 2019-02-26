@@ -6,6 +6,11 @@ from aiohttp import web
 from libsnek import data, movement
 
 
+COLOR = "#cc4343"
+HEAD_TYPES = ["smile", "tongue"]
+TAIL_TYPES = ["fat-rattle", "small-rattle"]
+
+
 routes = web.RouteTableDef()
 
 
@@ -100,7 +105,11 @@ async def start(request):
     board = data.BoardState(await request.json())
     await register_own_snake(board)
 
-    return web.json_response({"color": "#b30"})
+    return web.json_response({
+        "color": COLOR,
+        "headType": random.choice(HEAD_TYPES),
+        "tailType": random.choice(TAIL_TYPES),
+    })
 
 
 @routes.post('/move')
